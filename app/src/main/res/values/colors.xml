@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#F5F2EA</color>
+    <color name="ink">#15171C</color>
+    <color name="gold">#B78A2E</color>
+    <color name="gold_dark">#9A7320</color>
+    <color name="icon_bg">#15171C</color>
+</resources>

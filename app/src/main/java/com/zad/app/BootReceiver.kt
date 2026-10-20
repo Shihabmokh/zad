@@ -1,0 +1,15 @@
+package com.zad.app
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+
+/** يعيد جدولة التنبيهات بعد إعادة تشغيل الجهاز أو تحديث التطبيق. */
+class BootReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        if (intent.action == Intent.ACTION_BOOT_COMPLETED ||
+            intent.action == Intent.ACTION_MY_PACKAGE_REPLACED) {
+            AlarmScheduler.scheduleAll(context)
+        }
+    }
+}
